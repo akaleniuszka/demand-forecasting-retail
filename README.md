@@ -45,6 +45,7 @@ demand-forecasting-retail/
 ├── dashboard/
 ├── images/
 └── docs/
+```
 
 ## Workflow
 1. Load and explore historical sales data
