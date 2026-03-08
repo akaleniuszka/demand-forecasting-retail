@@ -205,3 +205,20 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local data files
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# Power BI
+*.pbix
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
