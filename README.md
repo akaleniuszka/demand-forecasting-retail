@@ -1,35 +1,105 @@
 # Demand Forecasting for Retail Operations
 
 ## Overview
-This project focuses on forecasting retail demand using historical sales data to support planning, inventory visibility, and operational decision-making.
+This project focuses on forecasting retail demand using historical sales data to support inventory planning, operational efficiency, and data-driven decision-making.
+
+Using time series analysis and machine learning (Prophet), the project identifies trends and seasonal patterns to generate reliable demand forecasts.
+
+---
 
 ## Business Problem
-Retail and operations teams need reliable demand forecasts to improve planning accuracy, reduce stock issues, and anticipate future sales behavior.
 
-## Objectives
-- Analyze historical demand patterns
-- Identify trends and seasonality
-- Build a forecasting model using Prophet
-- Evaluate forecasting performance
-- Translate model output into business insights
+Retail businesses need accurate demand forecasts to:
+
+- Avoid stockouts and overstock
+- Optimize inventory levels
+- Improve supply chain planning
+- Anticipate demand fluctuations
+
+This project simulates a real-world scenario where historical sales data is used to predict future demand.
+
+---
 
 ## Dataset
-This project uses a retail demand dataset containing historical daily sales by store and item.
+
+The dataset contains historical daily sales across multiple stores and items.
 
 Main fields:
-- date
-- store
-- item
-- sales
+
+- `date`
+- `store`
+- `item`
+- `sales`
+
+The data was aggregated at a daily level to build a time series forecasting model.
+
+---
+
+## Exploratory Analysis
+
+### Total Daily Sales
+
+![Daily Sales](images/daily_sales.png)
+
+The time series shows stable long-term behavior with visible patterns over time.
+
+---
+
+## Forecasting Model
+
+The model was built using **Facebook Prophet**, which is designed for time series forecasting with strong seasonality and trend detection.
+
+### Demand Forecast
+
+![Forecast](images/forecast.png)
+
+---
+
+### Model Components
+
+![Components](images/components.png)
+
+The model captures:
+
+- **Trend**: overall direction of demand over time  
+- **Weekly seasonality**: recurring patterns across days of the week  
+- **Yearly seasonality**: long-term fluctuations  
+
+---
+
+## Key Insights
+
+- Demand shows **consistent patterns over time**
+- Clear **seasonal behavior** is present
+- Forecast provides a reliable baseline for the next 90 days
+- The model can be extended to:
+  - Store-level forecasting
+  - Item-level forecasting
+  - Demand segmentation
+
+---
+
+## Business Impact
+
+This type of model can be used to:
+
+- Improve inventory planning
+- Optimize supply chain decisions
+- Support demand-driven operations
+- Reduce operational costs
+
+---
 
 ## Tech Stack
+
 - Python
 - Pandas
 - Prophet
-- Matplotlib
-- Seaborn
-- SQL
-- Power BI
+- Matplotlib / Seaborn
+- SQL (data preparation)
+- Power BI (planned)
+
+---
 
 ## Project Structure
 ```text
@@ -47,19 +117,20 @@ demand-forecasting-retail/
 └── docs/
 ```
 
-## Workflow
-1. Load and explore historical sales data
-2. Clean and prepare the dataset
-3. Aggregate data for forecasting
-4. Train a Prophet forecasting model
-5. Evaluate model outputs
-6. Generate business insights and visualizations
+## Next Steps
 
-## Expected Outputs
-- Exploratory analysis of retail demand
-- Forecast plots with trend and seasonality
-- Business interpretation of future demand
-- Portfolio-ready documentation and visuals
+- Forecast by store and product
+- Evaluate model performance (MAE, RMSE)
+- Build Power BI dashboard
+- Deploy forecasting pipeline
+
+---
 
 ## Author
-Alfredo Kaleniuszka
+
+Alfredo Kaleniuszka  
+Senior Data Analyst / Analytics Engineer  
+
+- LinkedIn: https://www.linkedin.com/in/alfredo-kaleniuszka  
+- GitHub: https://github.com/akaleniuszka  
+- Website: https://alfredokaleniuszka.com
